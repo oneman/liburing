@@ -14,6 +14,7 @@ LDFLAGS ?=
 override LDFLAGS += -L../src/ -luring -lpthread
 
 example_srcs := \
+	io_uring-sys-test.c \
 	io_uring-close-test.c \
 	io_uring-cp.c \
 	io_uring-test.c \
